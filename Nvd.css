@@ -1,0 +1,100 @@
+* {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: #ecf2fd;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    padding: 10px 14px;
+  }
+  
+  .nav {
+    display: flex;
+    align-items: center;
+  }
+  
+  .nav-title,
+  .playlist-title {
+    font-size: 18px;
+    margin-right: 4px;
+  }
+  
+  .nav-arrow {
+    font-size: 18px;
+    font-weight: bold;
+    margin-right: 4px;
+  }
+  
+  .nav-page {
+    font-weight: bold;
+    font-size: 14px;
+    color: #99938f;
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  .setting {
+    display: flex;
+    align-items: center;
+  }
+  
+  .setting-img {
+    width: 50px;
+    height: 50px;
+    margin-right: 12px;
+  }
+  
+  .setting-img img {
+    width: 100%;
+    height: 100%;
+    border-radius: 14px;
+  }
+  
+  .setting-name {
+    margin-right: 30px;
+  }
+  .setting-name h2 {
+    font-size: 16px;
+  }
+  
+  .setting-name h4 {
+    font-size: 10px;
+  }
+  
+  /* playlist */
+  
+  main {
+    display: flex;
+    gap: 16px;
+    width: 100%;
+    padding: 20px 0;
+  }
+  
+  .playlist {
+    background-color: #ffffff;
+    flex-grow: 2;
+    min-width: 200px;
+    border-radius: 50px;
+    padding: 20px 30px;
+  }
+  
+  .playlist ul {
+  }
+  
+  .playlist ul li {
+  }
+  
+  .music_controller {
+    background-color: #ffffff;
+    flex-grow: 1;
+    border-radius: 50px;
+    padding: 20px 30px;
+  }
