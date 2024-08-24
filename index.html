@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="player_wrapper">
+        <div class="player">
+          <div class="player__controls">
+            <h5 class="player__title">playing now</h5>
+            <div class="player__btn player__btn--small" id="icon-menu">
+              <i class="fas fa-bars"></i>
+            </div>
+          </div>
+          <div class="player__album">
+            <img
+            src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/24df903b-08f8-493c-855e-200b35aa8a26/de2ztlh-7dc17344-1af4-4b45-9797-1d02102c74ba.jpg/v1/fill/w_899,h_889,q_70,strp/jocker_final_by_shyamz7_de2ztlh-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTI2NSIsInBhdGgiOiJcL2ZcLzI0ZGY5MDNiLTA4ZjgtNDkzYy04NTVlLTIwMGIzNWFhOGEyNlwvZGUyenRsaC03ZGMxNzM0NC0xYWY0LTRiNDUtOTc5Ny0xZDAyMTAyYzc0YmEuanBnIiwid2lkdGgiOiI8PTEyODAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.YSlBm9ZbUfj9bx5KnYRDO5PEES2ktDVGx0UFvtFDk-U""
+            alt="Album Cover" class="player__img" loading="lazy" />
+          </div>
+
+          <h2 class="player__artist">Twenty One Pilots</h2>
+          <h3 class="player__song">Ride</h3>
+
+          <input
+            type="range"
+            value="0"
+            class="player__level"
+            id="range"
+          />
+          <div class="audio-duration">
+            <div class="start">0:00</div>
+            <div class="end">0:00</div>
+          </div>
+
+          <audio class="player__audio" controls id="audio">
+            <source
+              src="./music/Twenty One Pilots - Ride (Vietsub _Lyrics).mp3"
+              type="audio/mp3"
+            />
+          </audio>
+
+          <div class="player__controls">
+            <div class="player__btn player__btn--medium" id="backward">
+              <i class="fas fa-backward"></i>
+            </div>
+
+            <div class="player__btn player__btn--medium blue play" id="play">
+              <i class="fas fa-play play-btn"></i>
+              <i class="fas fa-pause pause-btn hide"></i>
+            </div>
+
+            <div class="player__btn player__btn--medium" id="forward">
+              <i class="fas fa-forward"></i>
+            </div>
+          </div>
+        </div>
+        <div class="playlist open">
+          <ul>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <script type="module" src="main.js"></script>
+    <script
+      src="https://kit.fontawesome.com/3d58631ec4.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
